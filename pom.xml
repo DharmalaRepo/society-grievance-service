@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.tech</groupId>
-	<artifactId>society-grievance</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>society-grievance-service</artifactId>
+	<version>0.0.1</version>
 	<name>Society Grievance</name>
 	<description>society Grievance</description>
 	<url/>
