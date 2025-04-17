@@ -4,6 +4,7 @@ import com.tech.society.grievance.models.Grievance;
 import com.tech.society.grievance.services.GrievanceService;
 import com.tech.society.grievance.services.NotificationService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,6 +18,11 @@ public class GrievanceController {
 
     @Autowired
     private NotificationService notificationService;
+
+    @GetMapping("/health")
+    public ResponseEntity<?> health() {
+        return ResponseEntity.ok("Hello, welcome to Society Grievance Service..!!");
+    }
 
     // Endpoint to log a grievance
     @PostMapping("/log")
